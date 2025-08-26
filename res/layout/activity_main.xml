@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Root LinearLayout
+  - orientation="vertical": Stacks child elements (the buttons) on top of each other.
+  - gravity="center": Centers the children both vertically and horizontally within the screen.
+  - layout_width/height="match_parent": Makes the layout fill the entire screen.
+  - padding="16dp": Adds some space around the edges of the screen for better aesthetics.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 
+      Disable Camera Button
+      - style: Uses the standard framework button style for maximum compatibility.
+      - layout_marginBottom="24dp": Increased space between this button and the one below it.
+      - text: Sets the button's label.
+      - minWidth="220dp": Ensures the button has a good, tappable width.
+      - backgroundTint: A reddish color to visually represent a "disable" or "stop" action.
+      - drawableLeft: Adds a standard "cancel" icon to the left of the text.
+      - drawablePadding: Adds space between the icon and the text.
+    -->
+    <Button
+        android:id="@+id/disable_camera_button"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:drawablePadding="8dp"
+        android:minWidth="220dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Disable Camera"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- 
+      Enable Camera Button
+      - style: Uses the standard framework button style for maximum compatibility.
+      - minWidth="220dp": Matches the width of the button above for visual consistency.
+      - backgroundTint: A greenish color to visually represent an "enable" or "go" action.
+      - drawableLeft: Adds a standard "camera" icon to the left of the text.
+      - drawablePadding: Adds space between the icon and the text.
+    -->
+    <Button
+        android:id="@+id/enable_camera_button"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="8dp"
+        android:minWidth="220dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Enable Camera"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
