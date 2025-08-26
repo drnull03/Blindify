@@ -5,7 +5,7 @@ set -e
 
 
 
-source ./prepareVar.sh
+source ./prepareVars.sh
 
 
 echo "--- 1. Cleaning up previous build artifacts ---"
