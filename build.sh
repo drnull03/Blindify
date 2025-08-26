@@ -9,8 +9,8 @@ source ./prepareVar.sh
 
 
 echo "--- 1. Cleaning up previous build artifacts ---"
-rm -rf obj bin build
-mkdir -p  obj bin build
+rm -rf obj bin
+mkdir -p  obj bin
 
 
 
@@ -23,7 +23,6 @@ $BUILD_TOOLS/aapt2 link \
     -o bin/base.apk \
     --manifest AndroidManifest.xml \
     -I "$PLATFORM/android.jar" \
-    -I "assets/material-1.12.0.aar" \
     --java src \
     bin/compiled_res.zip
 

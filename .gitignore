@@ -1,1 +1,4 @@
 *.keystore
+bin/
+obj/
+**R.java
