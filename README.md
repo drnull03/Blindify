@@ -1,5 +1,5 @@
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 # Blindify  
-
 **Blindify** is an app designed to give you full control over your phone’s cameras by disabling them at the **root level**. This is especially useful for:  
 - Privacy-conscious users who don’t want cameras active 24/7  
 - Users who feel uncomfortable having cameras pointed at them all the time  
@@ -16,3 +16,7 @@ Blindify disables all phone cameras at the **Virtual File System (/dev) level**,
 ## Notes  
 - Apps that rely heavily on the camera (e.g., QR code scanners) may crash or not work while the camera is disabled.  
 - Functionality will return to normal once you re-enable the camera.  
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
