@@ -93,6 +93,6 @@ else
         bin/Blindify-unsigned.apk
 
     echo "--- APK signed successfully with debug key! ---"
-    echo "Signed APK is located at: bin/Blindify.apk"
+    echo "Signed APK is located at: bin/Blindify-debug.apk"
 
 fi
